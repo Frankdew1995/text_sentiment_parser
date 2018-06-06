@@ -10,7 +10,7 @@ import os
 from textblob import TextBlob
 
 
-df = pd.read_csv('/Users/frankdu/Learn_Dash_Plotly/sentiment_parser/Lan_Code.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/Frankdew1995/text_sentiment_parser/master/Lan_Code.csv')
 
 app = dash.Dash('Sentiment Parser')
 
