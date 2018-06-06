@@ -1,1 +1,1 @@
-web: gunicorn sent_parser:server
+web: gunicorn sent_parser:server --log-file -

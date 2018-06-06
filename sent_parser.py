@@ -5,6 +5,7 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objs as go
 import plotly.plotly as py
 import pandas as pd
+import os
 # import pendulum as pen
 from textblob import TextBlob
 
