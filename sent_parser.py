@@ -8,18 +8,18 @@ import pandas as pd
 import os
 # import pendulum as pen
 from textblob import TextBlob
+import nltk
 
 
 df = pd.read_csv('https://raw.githubusercontent.com/Frankdew1995/text_sentiment_parser/master/Lan_Code.csv')
 
 app = dash.Dash('Sentiment Parser')
 
+app.title = "Text Sentiment Parsing App"
+
 server = app.server
 
-# app.head = [
-#
-#     html.Title('hello')
-# ]
+
 
 app.layout = html.Div([
 
@@ -85,8 +85,6 @@ def parse_sentiment(clicks,language,text):
 
 
     }
-    # fig = go.Figure(data=data, layout=layout)
-
 
 my_css_url = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
 app.css.append_css({
@@ -100,4 +98,4 @@ app.css.append_css({
 
 if __name__ == '__main__':
 
-    app.run_server(debug=True)
+    app.run_server(debug=False)
